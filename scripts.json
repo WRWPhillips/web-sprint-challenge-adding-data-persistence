@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "start":"node index.js",
+        "server":"nodemon index.js",
+        "migrate":"knex migrate:latest",
+        "seed":"knex seed:run", 
+        "resetdb":"npm run rollback && npm run migrate && npm run seed"
+    },
+    "comment_":"ignore this, I used it in order to experiment with appending scripts to my package.json using jq"
+}
